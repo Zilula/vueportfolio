@@ -2,8 +2,8 @@
     <div id="content">
         <img id="logo" src="../assets/logo.png" alt="lance merril`s logo">
         <h1 class="text">Lance<br>Merrill</h1>
-        <div class="break"></div>
-        <p class="text">Software engineer and general nerd.</p>
+        <div id="logoBorder"></div>
+        <p class="text">Software engineer, Ironman hopeful and general nerd.</p>
         <div class="break"></div>
         <section class="text">
             <p>
@@ -17,7 +17,7 @@
                 I have a legitimate passion for new technology and am committed to being a life long learner.  
             </p>
             <div class="dualContainer">
-                <img id="mernImage" src="../assets/mern.png" alt="Mern Tech Stack">
+                <img id="mernImage" src="../assets/mernplusvue.svg" alt="Mern Tech Stack">
                 <div>
                 <h4 class="text">Stack</h4>
                     <div class="break"></div>
@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @media only screen and (min-width: 600px) {
   #content {
@@ -55,13 +55,21 @@ export default {
 #logo {
     max-width: 150px;
     max-height: 150px;
-  margin-left: auto;
-  margin-right: auto;}
+    margin-left: auto;
+    margin-right: auto;
+  }
+#logoBorder {
+    width: 15%;
+    height: .2em;   
+    background-color: rgb(247, 247, 247);
+    margin: 1em auto 1em auto;
+}
 
 #content {
     background-color: rgba(0, 0, 0, 0.502);
     margin: auto;
     border-radius: 1em;
+    padding: 1em;
 }
 h1 {
     letter-spacing: .3em;
@@ -103,6 +111,9 @@ ul {
     align-items: center;
     padding:0;
 }
+    li{
+        margin: .2em;
+    }
 
 
 

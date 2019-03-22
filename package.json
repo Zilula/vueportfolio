@@ -8,6 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "autoprefixer": "^9.5.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
     "vue": "^2.6.6"
   },
   "devDependencies": {
