@@ -7,7 +7,7 @@
         <div class="break"></div>
         <section class="text">
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                Here’s what, specifically, I can deliver to teams. I bring the adaptability to work on both front-end and back-end applications that interact with relational and non-relational databases like PostgreSQL or MongoDB. To derive value from databases, I have experience creating models, schemas, and RESTful APIs that perform CRUD and data aggregation operations. To bring things together, I have utilized React and Vue to create simple and intuitive user interfaces. In terms of testing I've used Jest + Enzyme, and I maintain a solid grasp on all things HTML5/CSS3. In the future, I`m looking to add AWS training/certifications to my skills.
             </p>
         </section>
         <div class="break"></div>
@@ -47,8 +47,21 @@
             <h3 class="text">Interests</h3>
             <div class="dualContainer">
                 <img id="colab" src="../assets/microservices.png" alt="abstract image detailing microservices">
-                <p class="text">My next challenge on the list developing and deploying microservices using Go (or Node), Docker and Kubernetes.</p>
+                <p class="text">My next challenge on the list developing and deploying microservices using Go (or Node), Docker and Kubernetes. I also really enjoy Jiujitsu and Cycling.</p>
             </div>
+        </section>
+         <div class="break"></div>
+        <section>
+            <h2 class="text">Projects</h2>
+            <div id="logoBorder"></div>
+            <h4 class="text">Beep!</h4>
+            <p class="text">Beep! is a twitter clone build in React and Redux to handle the front end UI and state. On the backend, Express and MongoDB is used to create and server and manage the database.</p>
+            <img id="twitterPic" src="../assets/twitterProject.png" alt="screen shot from mt twiter project built in React, Node, Express and Redux">
+            <div class="break"></div>
+
+            <h4 class="text">Meraki Token</h4>
+            <p class="text">Meraki token is an ERC-20 (ethereum) token build to reward podcast viewers for the loyalty. The tokens could be redeemed for podcast themed gear. Meraki token was built in Solidity, Smart Contracts, and TestNet.</p>
+            <img id="merakiToken" src="../assets/MerakiToken.png" alt="a screen shot of some code that was used to build the meraki token.">
         </section>
     </div>
 </template>
@@ -60,12 +73,15 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
+<style scoped>
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @media only screen and (min-width: 600px) {
   #content {
       max-width: 50%;
   }
+    .text {
+        margin-top: 2em;
+    }
 }
 #logo {
     max-width: 150px;
@@ -100,8 +116,8 @@ h1 {
     margin: .3em;
 }
 h2 {
-    font-size: 1.1em;
-}
+      text-transform: uppercase;
+      margin-bottom: 2em;}
 h3 {
       text-transform: uppercase;
       margin-bottom: 2em;
@@ -136,6 +152,23 @@ li{
     margin:auto;
     border-radius: .5em;
 }
+#twitterPic {
+    width: 100%;
+    border-top: 1em;
+    height: auto;
+    margin:auto;
+    border-radius: .5em;
+}
+#merakiToken {
+    width: 100%;
+    height: auto;
+    margin:auto;
+    border-radius: .5em;
+}
+h4 {
+    font-size: 1.2em;
+}
+
 
 
 
