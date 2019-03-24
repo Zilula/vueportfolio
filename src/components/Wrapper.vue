@@ -19,7 +19,7 @@
             <div class="dualContainer">
                 <img id="mernImage" src="../assets/mernplusvue.svg" alt="Mern Tech Stack">
                 <div>
-                <h4 class="text">Stack</h4>
+                <h4 class="text">The goods</h4>
                     <div class="break"></div>
                     <ul class="text">
                         <li>Node</li>
@@ -33,7 +33,22 @@
                     </ul>
                 </div>
             </div>
-            
+        </section>
+         <div class="break"></div>
+        <section>
+            <h3 class="text">Collaborative</h3>
+            <div class="dualContainer">
+                <p class="text">A team dynamic with the right energy is unstoppable. I strive to be a positive contributor in every team I join.</p>
+                <img id="colab" src="../assets/Collaboration_words_quoates.jpg" alt="the values of collboration">
+            </div>
+        </section>
+         <div class="break"></div>
+        <section>
+            <h3 class="text">Interests</h3>
+            <div class="dualContainer">
+                <img id="colab" src="../assets/microservices.png" alt="abstract image detailing microservices">
+                <p class="text">My next challenge on the list developing and deploying microservices using Go (or Node), Docker and Kubernetes.</p>
+            </div>
         </section>
     </div>
 </template>
@@ -78,18 +93,18 @@ h1 {
     bottom: 25%;
     text-transform: uppercase;
 }
-h2 {
-    font-size: 1.1em;
-}
-h3 {
-      text-transform: uppercase;
-
-}
 .text {
     font-family:'Montserrat', sans-serif;
     color: white;
     text-align: center;
     margin: .3em;
+}
+h2 {
+    font-size: 1.1em;
+}
+h3 {
+      text-transform: uppercase;
+      margin-bottom: 2em;
 
 }
 .break {
@@ -99,6 +114,7 @@ h3 {
 .dualContainer {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 1em;
 }
 #mernImage {
     width: 100%;
@@ -111,9 +127,15 @@ ul {
     align-items: center;
     padding:0;
 }
-    li{
-        margin: .2em;
-    }
+li{
+    margin: .2em;
+}
+#colab {
+    width: 100%;
+    height: auto;
+    margin:auto;
+    border-radius: .5em;
+}
 
 
 
